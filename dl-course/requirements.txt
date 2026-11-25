@@ -1,0 +1,17 @@
+# Kursens beroenden. Installeras i L01 i samma .venv som resten av repot.
+#
+# GTX 1080 är en Pascal-GPU (sm_61). PyTorch-hjulen på PyPI (CUDA 12.8+) saknar stöd för den.
+# Därför pinnas torch och torchvision till de exakta cu126-byggena från PyTorchs eget index.
+# Med bara --extra-index-url och utan pinning väljer pip den nyaste versionen från PyPI,
+# och då fungerar inte GPU:n.
+--extra-index-url https://download.pytorch.org/whl/cu126
+torch==2.14.1+cu126
+torchvision==0.29.1+cu126
+numpy
+pandas
+scikit-learn
+matplotlib
+tensorboard
+datasets
+jupyter
+ipykernel

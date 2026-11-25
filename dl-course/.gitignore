@@ -1,0 +1,26 @@
+# Datamängder, loggar och sparade modeller (laddas ned och skapas lokalt)
+data/
+runs/
+checkpoints/
+
+# Modellfiler, oavsett var de sparas
+*.pt
+*.pth
+*.ckpt
+*.keras
+*.h5
+*.safetensors
+
+# Datafiler, oavsett var de sparas (t.ex. i projects/)
+*.csv
+*.parquet
+*.npy
+*.npz
+*.pkl
+*.zip
+*.tar
+*.tar.gz
+*.gz
+
+# Jupyter
+.ipynb_checkpoints/
